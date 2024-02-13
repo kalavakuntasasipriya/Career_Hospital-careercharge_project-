@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body,h1, ul, li    
+    {
+    margin: 0;
+    padding: 0;
+    }
+    h1
+    {
+        text-align: center;
+        background-color: steelblue;
+        height: fit-content;
+        color: white;
+        margin-top: 0px;
+        padding: 20px;
+    }
+    nav
+    {
+        background-color: gray;
+    }
+    nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    }
+
+    nav li {
+    margin-top: 0px;
+    margin-left: 20px;
+    padding: 5px;
+    }
+
+    nav a {
+    text-decoration: none;
+    color: white;
+    }
+    main {
+    display: flex;
+    background-image: url(./med.jpg);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    background-color:aliceblue;
+
+
+    }
+    .health-tips {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.health-tip {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: lightcyan;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+.logo
+		{
+			width: 100%;
+			background-color: red;
+			border-bottom: 2px solid #f0f0f0;
+		}
+		.logo div
+		{
+			background-color: lightseagreen; 
+			padding: 10px;
+			text-align: left;
+		}
+		.logo div table a
+		{
+			
+			padding: 15px;
+			text-decoration: none;
+			color: white;
+		}
+		.logo div table a:hover
+		{
+			color: white;
+            		background-color: turquoise;
+		}
+</style>
+<body>
+	<div class="logo">
+		<div>
+			<table>
+				<tr>
+					<td><a href="home.html"><img src="./logo.jpg" width="70" height="70" style="border-radius: 50%"></a></td>
+					<td width="450px" style="font-size: 30px;"><font color="white">Career Hospital</font></td>
+					<td>
+						<font size="2px"> 
+							<a href="home.html">HOME</a> 
+							<a href="about.html">ABOUT</a>  
+							<a href="services.html">SERVICE</a>
+							<a href="appointment.html">APPOINTMENT</a> 
+							<a href="cf.html">CONTACT & FEEDBACK</a>
+							<a href="tips.html">HEALTH TIPS</a>
+						</font>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+    <main>
+        <h1>LOCAL HEALTH CLINIC TIPS</h1>
+        <section class="health-tips">
+            <h2>BETTER INFORMATION BETTER HEALTH</h2>
+            <div class="health-tip">
+                <h3>Tip 1: Eat a Balanced Diet</h3>
+                <p>Include a variety of fruits, vegetables, lean proteins, and whole grains in your diet to maintain good health.</p>
+            </div>
+            <div class="health-tip">
+                <h3>Tip 2: Exercise Regularly</h3>
+                <p>Engage in at least 30 minutes of physical activity most days to keep your body in shape.</p>
+            </div>
+            <div class="health-tip">
+                <h3>Tip 3: Stay hydrated</h3>
+                <p>Many individuals consume beverages that are high in sugar or caffeine, which do not necessarily promote good health. Instead, it is necessary to drink water often! Water powers the body and encourages good health.</p>
+            </div>
+            <div class="health-tip">
+                <h3>Tip 4: Get a good night's rest</h3>
+                <p> Most primary care providers recommend that one sleeps for at least eight to 10 hours every night.</p>
+            </div>
+            
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Local Clinic</p>
+    </footer>   
+</body>
+</html>

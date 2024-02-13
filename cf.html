@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact and Feedback</title>
+</head>
+<style>
+body, h1,p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(cf.jpg);
+    background-attachment:scroll;
+    background-size: cover;
+}
+ .map iframe{
+                width: 80%;
+                height: 280px;    
+            }
+
+header {
+    /* background-color: mediumturquoise; */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.contact, .address {
+    flex: 1;
+    padding: 20px;
+}
+.address .p1,.p2
+{
+    border: 1px solid block;
+    height: 60px;
+    width: auto;
+    font-size:x-large;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: lightseagreen;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: lightseagreen;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    
+}
+.logo
+		{
+			width: 100%;
+			background-color: red;
+			border-bottom: 2px solid #f0f0f0;
+		}
+		.logo div
+		{
+			background-color: lightseagreen; 
+			padding: 10px;
+			text-align: left;
+		}
+		.logo div table a
+		{
+			
+			padding: 15px;
+			text-decoration: none;
+			color: white;
+		}
+		.logo div table a:hover
+		{
+			background-color: turquoise;
+           		 color: white;
+		}
+	</style>
+
+<body>
+	<div class="logo">
+		<div>
+			<table>
+				<tr>
+					<td><a href="home.html"><img src="./logo.jpg" width="70" height="70" style="border-radius: 50%"></a></td>
+					<td width="450px" style="font-size: 30px;"><font color="white">Career Hospital</font></td>
+					<td>
+						<font size="2px"> 
+							<a href="home.html">HOME</a> 
+							<a href="about.html">ABOUT</a>  
+							<a href="services.html">SERVICE</a>
+							<a href="appointment.html">APPOINTMENT</a> 
+							<a href="cf.html">CONTACT & FEEDBACK</a>
+							<a href="tips.html">HEALTH TIPS</a>
+						</font>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+    <header>
+        <h1>Contact and Feedback</h1>
+    </header>
+    <main>
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <label for="feedback">Your Feedback</label>
+                <textarea id="feedback" name="feedback" required></textarea>
+                
+                <button formaction="success2.html" type="submit">Submit</button>
+            </form>
+        </section>
+        <section class="address">
+            <h2>Address</h2>
+            <p class="p1">Carrer Hospital & Research Center</p>
+            <p class="p2">250, Cyber Towers,Cable bridge Road,Hitechcity,Hyderabad 521366<br> Contact No - 086123456 <br> Email: carrer@hospital.com</p>
+	    <br><br><br><br>
+	    <!--map-->
+            <div class="map">
+            	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31850964.463603575!2d40.66095420000002!3d12.968192600000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae173af6dd7757%3A0x7d485eeda065cf64!2sMansa%20Easy%20Mart%20-%20Indian%20Ecommerce%20Company%20in%20Bangalore!5e0!3m2!1sen!2sin!4v1699945288611!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Contact and Feedback</p>
+    </footer>
+</body>
+</html>

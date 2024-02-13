@@ -1,0 +1,198 @@
+<html>
+<head>
+	<title>Home</title>
+	<style>
+		body
+		{
+			margin: auto;
+			padding: auto;
+		}
+		/* header */
+		.logo
+		{
+			width: 100%;
+		}
+		.logo div
+		{
+			background-color: lightseagreen; 
+			padding: 10px;
+			text-align: left;
+		}
+		.logo div table a
+		{
+			padding: 15px;
+			text-decoration: none;
+			color: black;
+		}
+		.logo div table a:hover
+		{
+			color: white;
+			background: turquoise;
+		}
+		/* text on image */
+		.middle
+		{
+			padding-left: 20px;
+		}
+		.middle div
+		{
+			width: 1270px;
+			height: 520px;
+			background-image: url("home_middle.png");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		.middle div p
+		{
+			width: 1250px;
+			font-weight: bold;
+			height: 400px;
+			color: #DC143C;
+			font-size: 50px;
+			margin: 20px;
+		}
+		/* status of hospital */
+		.about
+		{
+			margin: 30px;
+		}
+		.about h1
+		{
+			text-align: center;
+		}
+		#table
+		{
+			padding: 0px;
+			vertical-align: top;
+			margin-bottom: 10px;
+			margin-top: 5px;
+		}
+		#image
+		{
+			width: 30%;
+		}
+		#text
+		{
+			width: 70%;
+			padding-left: 15px;
+			text-align: justify;
+			vertical-align: top;
+		}
+		#text,#main
+		{
+			font-size: 20px;
+		}
+		#card
+		{
+			border: 1px solid black;
+			margin: 20px;
+			text-align: center;
+			background-image: url("home_card.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		/* footer */
+		.footer 
+		{
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+    		}
+		.footer div 
+		{
+			width: 30%;
+		}
+		.footer h2
+		{
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+<body>
+	<!-- header -->
+	<div class="logo">
+		<div>
+			<table>
+				<tr>
+					<td><a href="home.html"><img src="logo.jpg" width="70" height="70" style="border-radius: 50%" alt="image is not found"></a></td>
+					<td width="450px" style="font-size: 30px;"><font color="white">Career Hospital</font></td>
+					<td>
+						<font size="2px"> 
+							<a href="home.html" target="_self">HOME</a> 
+							<a href="about.html" target="_self">ABOUT</a>  
+							<a href="services.html" target="_self">SERVICE</a>
+							<a href="appointment.html" target="_self">APPOINTMENT</a> 
+							<a href="cf.html" target="_self">CONTACT & FEEDBACK</a>
+							<a href="tips.html" target="_self">HEALTH TIPS</a>
+						</font>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<!-- text on image -->
+	<div class="middle">
+		<div>
+			<p>
+				<br><br><br><br>Health Care Services<br>
+				<font size="4px"><font color="#008B8B">We Care About Your Health </font></font>
+			</p> 
+		</div>
+	</div>
+	<!-- status of hospital -->
+	<div class="about">
+		<h1>Welcome to a Family</h1>
+		<table id="table">
+			<tr>
+				<td id="image"><img src="home_image.jpg" alt="image not visible" height="650px" width="500px"></td>
+				<td id="text">
+					<br><div id="main">We will treat you as our family with LOVE and CARE.Your health is more precious for us.We will take more care about your comfort and requirements.</div><br><br>
+					<div id="card">
+						<div class="about-clinic">
+							<h4>500+</h4>
+							<p>Happy Patients</p>
+						</div>
+						<div class="about-clinic">
+							<h4>88+</h4>
+							<p>Qualified Doctors</p>
+						</div>
+						<div class="about-clinic">
+							<h4>25+</h4>
+							<p>Years Experience</p>
+						</div>
+						<div class="about-clinic">
+							<h4>55++</h4>
+							<p>Awards</p>
+						</div>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<!-- footer -->
+	<div class="footer">
+		<div>
+			<h2>About Us</h2>
+       			<p>Welcome to Career Hospital. We are one of the largest corporate healthcare groups in India.</p>
+		</div>
+		<div>
+			<h2>Services</h2>
+			<p>Emergency Service</p>
+			<p>24/7 Service</p>
+			<p>Ambulance Service</p>
+		</div>
+		<div>
+			<h2>Contact</h2>
+			<p>123 Medical Street, City<br>
+			Phone: (123) 456-7890<br>
+			Email: career@example.com</p>
+		</div>
+	</div>
+</body>
+</html>
+

@@ -1,0 +1,133 @@
+<html>
+<head>
+	<title>Appointment</title>
+	<style>
+		body
+		{
+			margin: 0px;
+			padding: 0px;
+			background-image: url("appointment_background.jpg");
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		/* header */
+		.logo
+		{
+			width: 100%;
+		}
+		.logo div
+		{
+			background-color: lightseagreen; 
+			padding: 10px;
+			text-align: left;
+		}
+		.logo div table a
+		{
+			
+			padding: 15px;
+			text-decoration: none;
+			color: black;
+		}
+		.logo div table a:hover
+		{
+			color: white;
+			background-color: turquoise;
+		}
+		/* form */
+		.h1
+		{
+			text-align: center;
+			font-size: 35px;
+			color: #4682B4;
+		}
+		.form
+		{
+			border-radius: 20px;
+			background-color: rgb(199, 193, 193);
+			padding: 40px;
+			width: 400px;
+			position: relative;
+			right: -80px;
+		}	
+		.input
+		{
+			width: 100%;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			border-radius: 10px;
+			background-color: white;
+			font-size: 15px;
+			color: black;
+			padding: 5px;
+		}
+		.submit
+		{
+			position: relative;
+			left: 35px;
+			margin-top: 10px;
+			margin-bottom: -10px;
+			font-size: 17px;
+			border-radius: 20px;
+			padding: 10px;
+			color: green;
+			background-color: #AFEEEE;
+		}
+		.copy
+		{
+			background-color: black;
+			color: white;
+			padding: 10px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<!-- header -->
+	<div class="logo">
+		<div>
+			<table>
+				<tr>
+					<td><a href="home.html"><img src="logo.jpg" width="70" height="70" style="border-radius: 50%"></a></td>
+					<td width="450px" style="font-size: 30px;"><font color="white">Career Hospital</font></td>
+					<td>
+						<font size="2px"> 
+							<a href="home.html" target="_self">HOME</a> 
+							<a href="about.html" target="_self">ABOUT</a>  
+							<a href="services.html" target="_self">SERVICE</a>
+							<a href="appointment.html" target="_self">APPOINTMENT</a> 
+							<a href="cf.html" target="_self">CONTACT & FEEDBACK</a>
+							<a href="tips.html" target="_self">HEALTH TIPS</a>
+						</font>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<!-- form -->
+	<div class="main">
+		<h1 class="h1">Make An Appointment</h1>
+		<form class="form" action="success.html" method="post" name="form">
+			<span>Your Name:</span>
+				<input class="input" type="text" name="name" placeholder="Enter Your Name..." required>
+			<span>Your Email:</span>
+				<input class="input" type="email" name="email" placeholder="Enter Your Email..." required>
+			<span>Your Contact:</span>
+				<input class="input" type="tel" name="number" placeholder="Enter Your Contact Number..." pattern="[6-9]{1}[0-9]{9}" required>
+			<span>Date of Appointment:</span>
+				<input class="input" type="date" name="date" required>
+			<span>Time Slot:</span>
+				<select class="input" name="time" required>
+					<option value="none" selected disabled hidden>Select a Time Slot</option>
+					<option>9:00am to 12:30pm</option>
+					<option>1:00pm to 4:30pm</option>
+					<option>5:00pm to 8:30pm</option>
+					<option>9:00pm to 10:30pm</option>
+				</select>
+			<span>Give an overview of your problem:</span>
+				<textarea class="input" rows=2 cols=30 name="problem" value="problem" placeholder="eg: I am suffering from...."></textarea>
+			<input class="submit" type="reset" value="Cancel Appointment" name="submit">
+			<input class="submit" type="submit" value="Make Appointment" name="submit">
+		</form>
+	</div>
+</body>
+</html>
